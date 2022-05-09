@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<signature name="SyndicatsPlugin" urid="local" type="plugin" date="1509637912720">
+  <sign file="WEB-INF/plugins/SyndicatsPlugin/plugin.xml" signature="6auyCKEUFNgb64/ghMF4Xg==" />
+  <sign file="WEB-INF/plugins/SyndicatsPlugin/properties/languages/en.prop" signature="1B2M2Y8AsgTpgAmY7PhCfg==" />
+  <sign file="WEB-INF/plugins/SyndicatsPlugin/properties/languages/fr.prop" signature="1B2M2Y8AsgTpgAmY7PhCfg==" />
+  <sign file="WEB-INF/plugins/SyndicatsPlugin/properties/plugin.prop" signature="lT/m+I/VCgML0RgD3gTKPg==" />
+  <sign file="plugins/SyndicatsPlugin/css/plugin.less" signature="zHZWfVTq7l250BIdKe09Xw==" />
+  <sign file="plugins/SyndicatsPlugin/js/plugin.js" signature="PWtlEBhSrhTYGa4lqwm+1g==" />
+  <sign file="plugins/SyndicatsPlugin/jsp/plugin.jsp" signature="HhHXCuU58jmkb/WkRU9Duw==" />
+</signature>
+

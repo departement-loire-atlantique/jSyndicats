@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin PUBLIC "-//JALIOS//DTD JCMS-PLUGIN 1.6//EN" "http://jade/jcms/dtd/jcms-plugin-1.6.dtd">
+
+<!-- ======================== Introduction ============================== -->
+<!--                                                                      -->
+<!-- This document describes the properties and the behavior of a plugin. -->
+<!--                                                                      -->
+<!-- ====================== Plugin's attributes ========================= -->
+<!--                                                                      -->
+<!-- The PluginManager will process plugin description to plug components -->
+<!-- and package/deploy files.                                            -->
+<!--                                                                      -->
+<!-- See plugin's DTD for more information.                               -->
+<!--                                                                      -->
+<!-- Default values are in square brackets                                -->
+<!--                                                                      -->
+<!-- name               Internal plugin name. It must be a unique         -->
+<!--                    name. It should ends with "Plugin".               -->
+<!--                                                                      -->
+<!-- version            Version of the plugin (e.g. 0.1, 1.2, ...)        -->
+<!--                                                                      -->
+<!-- author             The author of the plugin.                         -->
+<!--                                                                      -->
+<!-- url                The home page URL of the plugin.                  -->
+<!--                                                                      -->
+<!-- license            The license of the plugin                         -->
+<!--                    (e.g. Proprietary, LGPL, ...)                     -->
+<!--                                                                      -->
+<!-- initialize         Should this plugin be initialized on load. [true] -->
+<!--                                                                      -->
+<!-- order              The order used to load a plugin before an         -->
+<!--                    other. Also used in hooks declaration order. [0]  -->
+<!--                                                                      -->
+<!-- jcms               The JCMS versions this plugin it compatible with. -->
+<!--                    Empty means any versions. A regexp can be used.   -->
+<!--                                                                      -->
+<!-- jsync              Is this plugin compatible with JSync [true]       -->
+<!--                                                                      -->
+<!-- appserver          A list ('|' separator) of compatible application  -->
+<!--                    server (e.g. Tomcat, Resin, Websphere, Weblogic). -->
+<!--                                                                      -->
+<!-- class              the plugin class to instanciate. Do not change    -->
+<!--                    unless you need to override default behavior      -->
+<!--                    [com.example.Plugin]                              -->
+<!--                                                                      -->
+<plugin name="SyndicatsPlugin" version="0.1" author="DEP44" license="DEP44" initialize="true" jcms="" order="0" url="" jsync="true" appserver="">
+  <!-- ======================== Label and Descriptions ==================== -->
+  <!--                                                                      -->
+  <!-- Plugin's label and description.  Because JCMS is multilingual,       -->
+  <!-- Plugins should be multilingual and declared, at least, in English    -->
+  <!-- and French.                                                          -->
+  <!--                                                                      -->
+  <!-- label              An internationalized label of the plugin.         -->
+  <!--                                                                      -->
+  <!-- description        An internationalized description of the plugin.   -->
+  <!--                                                                      -->
+  <!-- Attribute xml:lang="lang" defines the language value of the tag's    -->
+  <!-- content.                                                             -->
+  <!-- Example: <label xml:lang="en">SyndicatsPlugin</label>                   -->
+  <!--                                                                      -->
+  <!--                                                                      -->
+  <label xml:lang="fr">SyndicatsPlugin</label>
+  <description xml:lang="fr">Module utilisé pour les espaces de travail des syndicats</description>
+  <!-- =========================== Dependencies =========================== -->
+  <!--
+  <dependencies>
+    <dependency name="OtherPlugin" />
+  </dependencies>
+-->
+  <!-- ========================== Types and Templates ===================== -->
+  <!--
+  <types>
+	  <type name="Type">
+	    <file path="doTypeFullDisplay.jsp" />
+	  </type>
+	  
+	  <templates type="AbstractPortletSkinable">
+	    <template name="custom" file="doAbstractPortletSkinableFullDisplay.jsp" dir="type" usage='full'>
+	      <label xml:lang="en">Custom Template</label>
+	      <label xml:lang="fr">Gabarit Spécifique</label>
+	    </template>
+	    <template name="custom" file="doAbstractPortletSkinableResultDisplay.jsp" usage='query'>
+	      <label xml:lang="en">Custom Template</label>
+	      <label xml:lang="fr">Gabarit Spécifique</label>
+	    </template>
+	  </templates>
+  </types>
+ -->
+  <!-- ============================== Workflows =========================== -->
+  <!--
+  <workflows>
+    <workflow id="wfsyndicats" />
+  </workflows>
+-->
+  <!-- ========================== Classes and Jars ======================== -->
+  <!--
+  <jars>
+    <jar path="syndicats.jar" />
+  </jars>
+-->
+	<java-classes>
+    	<java package="fr.cg44.plugin.syndicats" />
+  	</java-classes>
+
+  <private-files>
+    <directory path="properties" />
+  </private-files>
+  <public-files>
+    <directory path="js" />
+    <directory path="css" />
+    <directory path="docs" />
+    <directory path="jsp" />
+    <!--    
+    <directory path="images" />
+    -->
+  </public-files>
+</plugin>
+

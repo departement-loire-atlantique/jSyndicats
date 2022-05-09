@@ -1,0 +1,46 @@
+// Include variables and mixins
+@import "../../../css/jalios/core/init-mixins.less";
+
+// -------------------------------------------------------------------
+// PLUGINS LESS VARIABLES
+// -------------------------------------------------------------------
+
+
+
+// Hook for JCMS
+@import "../../../css/plugin.less";
+
+
+// ------------------------------------------------------------------- 
+//  PLUGIN CSS DECLARATION                                             
+// ------------------------------------------------------------------- 
+//                                                                   
+//  To Include this file in a JSP:                                     
+//  * jcmsContext.addCSSHeader("plugins/{Name}/css/plugin.css");      
+//  * You MUST uncomment property in plugin.prop
+//                                                                   
+//  You can also use implements PortalPolicyFilter.setupHeaders()      
+//                                                                      
+
+input.abonnement{
+	display:block;
+	width:240px!important;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.bouton-abo-newsletter {
+  background-color: #a3ba08;
+  background-image: url("../../IntranetVisualIdentityPlugin/images/icon/facet-valid.png");
+  background-position: right 5% center;
+  background-repeat: no-repeat;
+  border: medium none;
+  border-radius: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  display: block;
+  width: 80%!important;
+  margin-left: auto;
+  margin-right: auto;  
+  min-height: 60px;
+}
